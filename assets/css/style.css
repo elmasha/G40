@@ -1166,11 +1166,12 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #008000;
+  border: solid 1px #008000;
   display: inline-block;
   padding: 8px 35px 9px 35px;
   border-radius: 4px;
-  color: #fff;
+  color: #008000;
+  width: 300px;
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1181,6 +1182,7 @@ section {
 
 .pricing .btn-buy:hover {
   background: #008000;
+  color: #fff;
 }
 
 .pricing .featured h3 {
@@ -1409,6 +1411,7 @@ section {
   border: solid #008000;
   padding: 10px 24px;
   color: #008000;
+  width: 400px;
   transition: 0.4s;
   border-radius: 4px;
 }

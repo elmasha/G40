@@ -70,6 +70,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#team">LogIn</a></li>
+          <li><a href="#donate">Donate</a></li>
           <li><a href="#contact">Contact</a></li>
 
         </ul>
@@ -204,37 +205,65 @@
     <!-- ======= Clients Section ======= -->
     <section id="register" class="contact">
       <div class="container">
-
         <div class="section-title">
           <h2>Register with us</h2>
         </div>
-
         <div class="row mt-5">
-      
-          <div class="col-lg-12 mt-5 mt-lg-0">
-
+          <div class="col-lg-12 mt-5 mt-lg-6">
             <form action="forms/contact.php" method="post"  role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-5 form-group">
-                  <input type="text" name="name" class="form-control" required id="name" placeholder="Full name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label>First name</label>
+                  <input type="text" name="name" class="form-control" required id="name" placeholder="First name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
+
                 <div class="col-md-5 form-group">
+                  <label>Second name</label>
+                  <input type="text" name="sirname" class="form-control" required id="sirname" placeholder="Second name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <label>Phone number</label>
                   <input type="number" class="form-control" required name="phone" id="phone" placeholder="Phone number" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>National ID/Passport no.</label>
                   <input type="number" name="id" required class="form-control" id="ID" placeholder="National ID no." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-5 form-group">
-                  <input type="text" class="form-control" required name="county" id="county" placeholder="County" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <label>Date of birth</label>
+                  <input type="date" class="form-control" required name="dob" id="dob" placeholder="Date of birth" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>Nationality</label>
                   <input type="text" class="form-control" required name="nationality" id="nationality" placeholder="Nationality" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <input type="text" class="form-control" required name="conuty" id="county" placeholder="County" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <input type="text" class="form-control" required name="constituency" id="constituency" placeholder="Constituency" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <input type="text" class="form-control" required name="ward" id="ward" placeholder="Ward" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <input type="text" class="form-control" required name="pollingstation" id="pollingstation" placeholder="Polling station" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
@@ -245,7 +274,63 @@
                   <input type="radio" id="female" required name="gender" value="female">
                   <label for="female">Female</label>
                 </div>
+
+                <div class="col-md-5 form-group">
+                  <p>Disabled ?</p>
+                  <input type="radio" id="male" required name="gender" value="male">
+                  <label for="male">Yes</label>
+                  <input type="radio" id="female" required name="gender" value="female">
+                  <label for="female">No</label>
+                </div>
+
+
+                <div class="col-md-12 form-group">
+
+                  <div class="col-md-6 form-group">
+                    <label for="img">Front side of your ID:</label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label for="img">Back side of your ID:</label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                  </div>
+
+                </div>
+
+                <div class="col-md-5 form-group">
+                  <label>Religion</label>
+                  <input type="text" class="form-control" required name="religion" id="religion" placeholder="Religion" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-5 form-group">
+                  <label>Ethnicity</label>
+                  <input type="text" class="form-control" required name="ethnicity" id="ethnicity" placeholder="Ethnicity" data-rule="minlen:4" data-msg="Please enter ethnicity" />
+                  <div class="validate"></div>
+                </div>
+
+
+
+
+
+              <div class="col-md-5 form-group">
+                <p>Employment status:</p>
+                <input type="radio" id="Employed" required name="Employment" value="Employed">
+                <label for="Employed">Employed</label>
+                <input type="radio" id="Unemployed" required name="Employment" value="Unemployed">
+                <label for="Unemployed">Unemployed</label>
+                
               </div>
+
+              <div class="col-md-5 form-group">
+                <p>Education status:</p>
+                <input type="radio" id="Primary" required name="Education" value="Primary">
+                <label for="Primary">Primary</label>
+                <input type="radio" id="Secondary" required name="Education" value="Secondary">
+                <label for="Secondary">Secondary</label>
+                <input type="radio" id="College/University" required name="Education" value="College/University">
+                <label for="College/University">College/University</label>
+              </div>
+
               <div class="col-md-5 form-group">
                 <input type="email" class="form-control" required name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
@@ -254,16 +339,17 @@
                 <input type="password" class="form-control" required name="password" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter a password" />
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>  
-              <div class="text-center"><button type="submit">Submit details</button></div>
-              <br>
-              <div class="text-center">
-                  <span>I have an Account <a href="">Log In</a></span>
+
+              <div class="col-md-10 form-group text-center"><button type="submit">Submit details</button>
+                <br>
+                <br>
+                <div class="text-center">
+                    <span>I have an Account <a href="">Log In</a></span>
+                </div>
+              
+              
               </div>
+             
             </form>
 
           </div>
@@ -358,8 +444,47 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-  <!-- End Portfolio Section -->
+    <section id="donate" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Donate</h2>
+        </div>
+
+        <div class="row mt-5">
+    
+          <div class="col-lg-12 mt-5 mt-lg-0">
+           
+            <div class="text-center"><img src="assets/img/mpesa.png" alt="" width="100" height="100"></div>
+              <br>
+              <form action="forms/contact.php" method="post"  role="form" class="php-email-form">
+                <div class="col-md-12">
+                  <div class="text-center  form-group">
+                    <input type="number" class="form-control" required name="amount" id="amount" placeholder="Amout" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class=" form-group">
+                    <input type="number" class="form-control" required name="number" id="password" placeholder="Phone number" data-rule="minlen:4" data-msg="Please enter a password" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="text-center"><button class="btn-buy" type="submit">Donate</button></div>
+                </div>
+               
+                <br>
+                
+              </form>
+
+
+        
+
+          </div>
+
+
+      </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
 
     <!-- ======= Team Section =======
     <section id="team" class="team section-bg">
@@ -447,7 +572,7 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section>
 
     -->
     <!-- ======= Frequently Asked Questions Section ======= -->
