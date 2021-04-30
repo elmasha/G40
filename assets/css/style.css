@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #008000;
+  border: 6px solid #f81919;
   border-top-color: white;
   border-radius: 50%;
   width: 60px;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #008000;
+  background: #f81919;
   color: #fff;
   transition: all 0.4s;
 }
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -7px;
   left: 0;
-  background-color: #008000;
+  background-color: #f81919;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;

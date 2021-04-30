@@ -11,7 +11,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -215,19 +214,19 @@
             <form action="forms/contact.php" method="post"  role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-5 form-group">
-                  <label>First name</label>
+                  <label>First name *</label>
                   <input type="text" name="name" class="form-control" required id="name" placeholder="First name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
-                  <label>Second name</label>
+                  <label>Second name *</label>
                   <input type="text" name="sirname" class="form-control" required id="sirname" placeholder="Second name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
-                  <label>Phone number</label>
+                  <label>Phone number *</label>
                   <input type="number" class="form-control" required name="phone" id="phone" placeholder="Phone number" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
@@ -238,39 +237,43 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-5 form-group">
-                  <label>Date of birth</label>
+                  <label>Date of birth *</label>
                   <input type="date" class="form-control" required name="dob" id="dob" placeholder="Date of birth" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
-                  <label>Nationality</label>
+                  <label>Nationality *</label>
                   <input type="text" class="form-control" required name="nationality" id="nationality" placeholder="Nationality" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>County *</label>
                   <input type="text" class="form-control" required name="conuty" id="county" placeholder="County" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>Constituency *</label>
                   <input type="text" class="form-control" required name="constituency" id="constituency" placeholder="Constituency" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>Ward *</label>
                   <input type="text" class="form-control" required name="ward" id="ward" placeholder="Ward" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
+                  <label>Polling station *</label>
                   <input type="text" class="form-control" required name="pollingstation" id="pollingstation" placeholder="Polling station" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
 
                 <div class="col-md-5 form-group">
-                  <p>Please select your gender:</p>
+                  <p>Please select your gender: *</p>
                   <input type="radio" id="male" required name="gender" value="male">
                   <label for="male">Male</label>
                   <input type="radio" id="female" required name="gender" value="female">
@@ -289,23 +292,23 @@
                 <div class="col-md-12 form-group">
 
                   <div class="col-md-6 form-group">
-                    <label for="img">Front side of your ID:</label>
+                    <label for="img">Front side of your ID: *</label>
                     <input type="file" id="img" name="img" accept="image/*">
                   </div>
                   <div class="col-md-6 form-group">
-                    <label for="img">Back side of your ID:</label>
+                    <label for="img">Back side of your ID: *</label>
                     <input type="file" id="img" name="img" accept="image/*">
                   </div>
 
                 </div>
 
                 <div class="col-md-5 form-group">
-                  <label>Religion</label>
+                  <label>Religion *</label>
                   <input type="text" class="form-control" required name="religion" id="religion" placeholder="Religion" data-rule="minlen:4" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-5 form-group">
-                  <label>Ethnicity</label>
+                  <label>Ethnicity *</label>
                   <input type="text" class="form-control" required name="ethnicity" id="ethnicity" placeholder="Ethnicity" data-rule="minlen:4" data-msg="Please enter ethnicity" />
                   <div class="validate"></div>
                 </div>
@@ -315,7 +318,7 @@
 
 
               <div class="col-md-5 form-group">
-                <p>Employment status:</p>
+                <p>Employment status: *</p>
                 <input type="radio" id="Employed" required name="Employment" value="Employed">
                 <label for="Employed">Employed</label>
                 <input type="radio" id="Unemployed" required name="Employment" value="Unemployed">
@@ -324,7 +327,7 @@
               </div>
 
               <div class="col-md-5 form-group">
-                <p>Education status:</p>
+                <p>Education status: *</p>
                 <input type="radio" id="Primary" required name="Education" value="Primary">
                 <label for="Primary">Primary</label>
                 <input type="radio" id="Secondary" required name="Education" value="Secondary">
@@ -334,11 +337,13 @@
               </div>
 
               <div class="col-md-5 form-group">
+                <label>Email *</label>
                 <input type="email" class="form-control" required name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
               </div>
               <div class="col-md-5 form-group">
-                <input type="password" class="form-control" required name="password" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter a password" />
+                <label>Email *</label>
+                <input type="Password" class="form-control" required name="password" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter a password" />
                 <div class="validate"></div>
               </div>
 
@@ -453,15 +458,15 @@
           
           <div class="floating col-md-4">
             <div class="text-center"><img src="assets/img/woman.png" alt="" width="400" height="400"></div>
-            <div><button class="cta-btn text-center" type="submit">   Women legue   </button></div>
+            <div><button class="cta-btn text-center" type="submit">   Women league   </button></div>
           </div>
           <div class="floating col-md-4">
             <div class="text-center"><img src="assets/img/youth.png" alt="" width="400" height="400"></div>
-            <div><button class="cta-btn text-center" type="submit">   Youth legue   </button></div>
+            <div><button class="cta-btn text-center" type="submit">   Youth league   </button></div>
           </div>
           <div class="floating col-md-4">
             <div class="text-center"><img src="assets/img/disability.png" alt="" width="400" height="400"></div>
-            <div><button class="cta-btn text-center" type="submit">   PwD legue   </button></div>
+            <div><button class="cta-btn text-center" type="submit">   PwD league   </button></div>
           </div>
           <div class="floating col-md-4">
             <div class="text-center"><img src="assets/img/volunteer.png" alt="" width="400" height="400"></div>
@@ -502,37 +507,32 @@
           <h2>Donate</h2>
         </div>
 
-        <div class="row mt-5">
-    
+      
           <div class="col-lg-12 mt-5 mt-lg-0">
            
-            <div class="text-center"><img src="assets/img/donate2.png" alt="" width="400" height="400">
-            
-            <h2>Mpesa</h2>
-            </div>
-              <br>
-              <form action="forms/contact.php" method="post"  role="form" class="php-email-form">
-                <div class="col-md-12">
-                  <div class="text-center  form-group">
-                    <input type="number" class="form-control" required name="amount" id="amount" placeholder="Amout" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class=" form-group">
-                    <input type="number" class="form-control" required name="number" id="password" placeholder="Phone number" data-rule="minlen:4" data-msg="Please enter a password" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="text-center"><button class="btn-buy" type="submit">Donate</button></div>
+           
+              <div class="text-center"><img src="assets/img/donate2.png" alt="" width="400" height="400">
+          
+                <h2>Mpesa</h2>
                 </div>
-               
-                <br>
-                
-              </form>
-
-
-        
-
-          </div>
-
+                  <br>
+                  <form action="forms/contact.php" method="post"  role="form" class="php-email-form">
+                    <div class="text-center col-md-10">
+                      <div class="text-center  form-group">
+                        <input type="number" class="form-control" required name="amount" id="amount" placeholder="Amout" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validate"></div>
+                      </div>
+                      <div class=" form-group">
+                        <input type="number" class="form-control" required name="number" id="password" placeholder="Phone number" data-rule="minlen:4" data-msg="Please enter a password" />
+                        <div class="validate"></div>
+                      </div>
+                      <div class="text-center"><button class="btn-buy" type="submit">Donate</button></div>
+                    </div>
+                   
+                    <br>
+                    
+                  </form>
+   
 
       </div>
         </div>
