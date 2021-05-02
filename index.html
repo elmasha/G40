@@ -319,20 +319,20 @@
 
               <div class="col-md-5 form-group">
                 <p>Employment status: *</p>
-                <input type="radio" id="Employed" required name="Employment" value="Employed">
+                <input type="radio" id="Employed" required name="employment" value="Employed">
                 <label for="Employed">Employed</label>
-                <input type="radio" id="Unemployed" required name="Employment" value="Unemployed">
+                <input type="radio" id="Unemployed" required name="employment" value="Unemployed">
                 <label for="Unemployed">Unemployed</label>
                 
               </div>
 
               <div class="col-md-5 form-group">
                 <p>Education status: *</p>
-                <input type="radio" id="Primary" required name="Education" value="Primary">
+                <input type="radio" id="Primary" required name="education" value="Primary">
                 <label for="Primary">Primary</label>
-                <input type="radio" id="Secondary" required name="Education" value="Secondary">
+                <input type="radio" id="Secondary" required name="education" value="Secondary">
                 <label for="Secondary">Secondary</label>
-                <input type="radio" id="College/University" required name="Education" value="College/University">
+                <input type="radio" id="College/University" required name="education" value="College/University">
                 <label for="College/University">College/University</label>
               </div>
 
@@ -347,7 +347,7 @@
                 <div class="validate"></div>
               </div>
 
-              <div class="col-md-10 form-group text-center"><button type="submit">Submit details</button>
+              <div class="col-md-10 form-group text-center"><button type="submit" onclick="MemberDetails()">Submit details</button>
                 <br>
                 <br>
                 <div class="text-center">
@@ -831,7 +831,9 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="index.js"></script>
   <script src="assets/js/main.js"></script>
+
   
 </body>
 
