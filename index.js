@@ -1,40 +1,49 @@
-var db = firebase.firestore();
 
-
+var db = firabase.firstore();
 
 
 function MemberDetails(){
 
     var InputFirstname = document.getElementById("name").value;
-    var InputSecondname = document.getElementById("location").value;
-    var Inputphone = document.getElementById("email").value;
-    var InputID = document.getElementById("phone").value;
-    var InputEmail = document.getElementById("country").value;
-    var InputPassword = document.getElementById("country").value;
-    var InputCounty = document.getElementById("state").value;
-    var InputConstituency = document.getElementById("message").value;
-    var InputWard = document.getElementById("name").value;
-    var InputPollingstation = document.getElementById("location").value;
-    var InputDisability = document.getElementById("email").value;
-    var InputReligion = document.getElementById("phone").value;
-    var InputEmployment = document.getElementById("country").value;
-    var InputEducationStatus = document.getElementById("state").value;
-    var InputEthnicity = document.getElementById("message").value;
+    var InputSecondname = document.getElementById("secname").value;
+    var Inputphone = document.getElementById("phone").value;
+    var InputID = document.getElementById("ID").value;
+    var InputDOB = document.getElementById("dob").value;
+    var InputNationality = document.getElementById("nationality").value;
+    var InputEmail = document.getElementById("email").value;
+    var InputPassword = document.getElementById("password").value;
+    var InputCounty = document.getElementById("county").value;
+    var InputConstituency = document.getElementById("constituency").value;
+    var InputWard = document.getElementById("ward").value;
+    var InputPollingstation = document.getElementById("pollingstation").value;
+    var InputDisability = document.getElementById("yes").value;
+    var InputReligion = document.getElementById("religion").value;
+    var InputEmployment = document.getElementById("Employed").value;
+    var InputEducationStatus = document.getElementById("Primary").value;
+    var InputEthnicity = document.getElementById("ethnicity").value;
   
-    if(Inputname == "" |Inputphone == ""
-     |Inputcountry == "" |Inputmessage == "" |Inputstate == "" |Inputemail == ""){
+    if(InputID == "" |Inputphone == ""
+     |InputDOB == "" |InputFirstname == "" |InputNationality == "" |InputEmail == "" | InputPassword == ""){
       window.alert("Inputs are empty")
   
     }else{
   
-      db.collection("Members").doc().set({
-        Name: Inputname,
-        Location: Inputlocation,
-        Email: Inputemail,
-        Phone: Inputphone,
-        Message: Inputmessage,
-        State: Inputstate,
-        Country: Inputcountry
+      db.collection("G40Members").doc().set({
+        firstName: Inputname,
+        secondName: InputSecondname,
+        email: Inputemail,
+        phone: Inputphone,
+        id: InputID,
+        nationality: InputNationality,
+        county: InputCounty,
+        constituency: InputConstituency,
+        pollingstation: InputPollingstation,
+        ward: InputWard,
+        religion: InputReligion,
+        ethnicity: InputEthnicity,
+        education: InputEducationStatus,
+        employment: InputEmployment,
+        dob: InputDOB
         })
         .then(function() {
         console.log("Document successfully written!");

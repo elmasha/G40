@@ -58,6 +58,7 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container-fluid d-flex align-items-center justify-content-between">
+      
 
       <h1 class="logo"><a href="index.html">G40</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -221,7 +222,7 @@
 
                 <div class="col-md-5 form-group">
                   <label>Second name *</label>
-                  <input type="text" name="sirname" class="form-control" required id="sirname" placeholder="Second name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="sirname" class="form-control" required id="secname" placeholder="Second name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
 
@@ -282,9 +283,9 @@
 
                 <div class="col-md-5 form-group">
                   <p>Disabled ?</p>
-                  <input type="radio" id="male" required name="gender" value="male">
+                  <input type="radio" id="yes" required name="Disabled" value="Yes">
                   <label for="male">Yes</label>
-                  <input type="radio" id="female" required name="gender" value="female">
+                  <input type="radio" id="no" required name="Disabled" value="no">
                   <label for="female">No</label>
                 </div>
 
@@ -347,7 +348,7 @@
                 <div class="validate"></div>
               </div>
 
-              <div class="col-md-10 form-group text-center"><button type="submit" onclick="MemberDetails()">Submit details</button>
+              <div class="col-md-10 form-group text-center"><button  onclick="MemberDetails()"  type="submit">Submit details</button>
                 <br>
                 <br>
                 <div class="text-center">
@@ -830,22 +831,40 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5pznU40bbdm-DcuLGnuV2Xhi6s0yZ4Nw",
+    authDomain: "generation40-80dbf.firebaseapp.com",
+    projectId: "generation40-80dbf",
+    storageBucket: "generation40-80dbf.appspot.com",
+    messagingSenderId: "131327446932",
+    appId: "1:131327446932:web:495f4807bb8aa8ac55c981",
+    measurementId: "G-NT46MSZ5YS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+</script>
+
+
+
   <!-- Template Main JS File -->
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
   <script src="assets/js/main.js"></script>
 
   
 </body>
 
 
-
-
-<script>
-
-
-  
-
-
-</script>
 </html>
 
