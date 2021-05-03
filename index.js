@@ -1,5 +1,5 @@
 
-var db = firabase.firstore();
+let db = firabase.firstore();
 
 
 function MemberDetails(){
@@ -28,7 +28,7 @@ function MemberDetails(){
   
     }else{
   
-      db.collection("G40Members").doc().set({
+      db.collection("G40Members").add({
         firstName: Inputname,
         secondName: InputSecondname,
         email: Inputemail,
